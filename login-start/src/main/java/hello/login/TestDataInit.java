@@ -29,7 +29,12 @@ public class TestDataInit {
         member.setLoginId("test");
         member.setPassword("test!");
         member.setName("테스터");
+        Member member1 = new Member();
+        member1.setLoginId("test1");
+        member1.setPassword("test1!");
+        member1.setName("테스터");
         memberRepository.save(member);
+        memberRepository.save(member1);
     }
 
 }
